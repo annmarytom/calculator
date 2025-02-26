@@ -15,18 +15,79 @@
             <div id="mode-toggleBtns">
                 <input type="checkbox" id="darkMode-toggle">
                 <label for="darkMode-toggle" id='darkMode-toggle-1'>
-                    <svg width="64px" height="64px" class="moon" viewBox="-2.5 -2.5 30.00 30.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#f4f0f0" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.15"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50009 12.0008C7.49604 10.6271 7.87712 9.2798 8.60009 8.11177C9.30106 6.97733 10.3262 6.07929 11.5431 5.53377C12.7306 5.00425 14.0552 4.86422 15.3271 5.13377L15.5091 5.17577C14.7053 5.71232 14.0258 6.41473 13.5161 7.23577C12.7931 8.4038 12.412 9.7511 12.4161 11.1248C12.4068 12.9579 13.0921 14.7265 14.3341 16.0748C15.1848 16.9942 16.285 17.6458 17.5001 17.9498C16.4784 18.6323 15.2778 18.9979 14.0491 19.0008C12.2877 18.9902 10.6101 18.2475 9.41809 16.9508C8.17612 15.6025 7.49083 13.8339 7.50009 12.0008Z" stroke="#f5f0f0" 
-                        stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                    <svg width="64px" height="64px" class="sun" viewBox="-6.72 -6.72 37.44 37.44" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#150404"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#000000" stroke-width="1.9200000000000004" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                 
-                </label>
-                   
-            </div>
-           
+                    <svg width="64px" height="64px" class="moon" viewBox="-2.5 -2.5 30.00 30.00" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" stroke="#f4f0f0" transform="rotate(0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                            stroke-width="0.15"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.50009 12.0008C7.49604 10.6271 7.87712 9.2798 8.60009 8.11177C9.30106 6.97733 10.3262 6.07929 11.5431 5.53377C12.7306 5.00425 14.0552 4.86422 15.3271 5.13377L15.5091 5.17577C14.7053 5.71232 14.0258 6.41473 13.5161 7.23577C12.7931 8.4038 12.412 9.7511 12.4161 11.1248C12.4068 12.9579 13.0921 14.7265 14.3341 16.0748C15.1848 16.9942 16.285 17.6458 17.5001 17.9498C16.4784 18.6323 15.2778 18.9979 14.0491 19.0008C12.2877 18.9902 10.6101 18.2475 9.41809 16.9508C8.17612 15.6025 7.49083 13.8339 7.50009 12.0008Z"
+                                stroke="#f5f0f0" stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </g>
+                    </svg>
+                    <svg width="64px" height="64px" class="sun" viewBox="-6.72 -6.72 37.44 37.44" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" stroke="#150404">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+                                stroke="#000000" stroke-width="1.9200000000000004" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
 
-            
+                </label>
+
+            </div>
+            <div id="output-display">
+                <input type="text" id="resultArea">
+            </div>
             <div class="sub-div">
-                
+                <table>
+                    <tr>
+                        <td><button class="blue-btn-operator" value="ac" onclick="resultArea.value =''">AC</button></td>
+                        <td><button class="blue-btn-operator" value="plusOrMinus"
+                                onclick="posNegConversion()">+/-</button></td>
+                        <td><button class="blue-btn-operator" value="module" onclick="resultArea.value +='%'">%</button>
+                        </td>
+                        <td><button class="red-btn-operator" value="division"
+                                onclick="resultArea.value +='/'">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" onclick="resultArea.value +='7'">7</button></td>
+                        <td><button class="btn-operator" value="8" onclick="resultArea.value +='8'">8</button></td>
+                        <td><button class="btn-operator" value="9" onclick="resultArea.value +='9'">9</button></td>
+                        <td><button class="red-btn-operator" value="multiply"
+                                onclick="resultArea.value +='*'">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" value="4" onclick="resultArea.value +='4'">4</button></td>
+                        <td><button class="btn-operator" value="5" onclick="resultArea.value +='5'">5</button></td>
+                        <td><button class="btn-operator" value="6" onclick="resultArea.value +='6'">6</button></td>
+                        <td><button class="red-btn-operator" value="minus" onclick="resultArea.value +='-'">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" value="1" onclick="resultArea.value +='1'">1</button></td>
+                        <td><button class="btn-operator" value="2" onclick="resultArea.value +='2'">2</button></td>
+                        <td><button class="btn-operator" value="3" onclick="resultArea.value +='3'">3</button></td>
+                        <td><button class="red-btn-operator" value="plus" onclick="resultArea.value +='+'">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" value="refresh"
+                                onclick="resultArea.value =resultArea.value.toString().slice(0,-1)">&#x21bb;</button>
+                        </td>
+                        <td><button class="btn-operator" value="zero" onclick="resultArea.value +='0'">0</button></td>
+                        <td><button class="btn-operator" value="dot" onclick="resultArea.value +='.'">.</button></td>
+                        <td><button class="red-btn-operator" value="equal"
+                                onclick="resultArea.value =eval(resultArea.value)">=</button></td>
+                    </tr>
+                </table>
+
             </div>
         </div>
     </div>
