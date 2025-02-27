@@ -84,13 +84,14 @@ label svg.moon {
     transition: 0.3s;
 }
 
-#output-display {
+.output-display {
     margin-left: 130px;
     width: 250px;
     height: 90px;
     position: relative;
     top: 120px;
-    background-color: aqua;
+    /* background-color: white; */
+    border: none;
 }
 
 #resultArea {
@@ -98,6 +99,9 @@ label svg.moon {
     height: 90px;
     text-align: right;
     border: none;
+    font-size: 20px;
+   
+    
 }
 
 .sub-div {
@@ -108,26 +112,25 @@ label svg.moon {
     margin: auto;
     padding: 50px;
     border-radius: 30px;
-    background-color: rgb(40, 38, 38);
+    background-color:#F9F6EE;
     display: grid;
 }
-
+table tr td button{
+    background-color: #F9F6EE; 
+}
 .btn-operator {
     margin: 2px;
     width: 70px;
     height: 50px;
-    color: white;
-    background-color: rgb(43, 42, 42);
+    color: rgb(12, 12, 12);
+    /* background-color: #F9F6EE; */
+    display: grid;
     border: none;
     padding: 12px 10px;
     border-radius: 6px;
     cursor: pointer;
     font-size: 20px;
     ;
-
-
-
-
 
 }
 
@@ -136,7 +139,7 @@ label svg.moon {
     width: 70px;
     height: 50px;
     color: hsl(180, 84%, 58%);
-    background-color: rgb(43, 42, 42);
+    /* background-color:#F9F6EE; */
     border: none;
     padding: 12px 10px;
     border-radius: 6px;
@@ -149,7 +152,7 @@ label svg.moon {
     width: 70px;
     height: 50px;
     color: hsl(0, 91%, 41%);
-    background-color: rgb(43, 42, 42);
+    /* background-color: #F9F6EE; */
     border: none;
     padding: 12px 10px;
     border-radius: 6px;
