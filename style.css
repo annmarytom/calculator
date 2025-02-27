@@ -20,7 +20,6 @@
 
 }
 
-
 label {
     width: 110px;
     height: 50px;
@@ -62,9 +61,6 @@ input:checked+label:after {
     background: linear-gradient(180deg, #777, #c8c5c5);
 }
 
-/* input:checked + label + .main-div{
-    background: rgb(233, 223, 223);
-} */
 label svg {
     position: absolute;
     width: 50px;
@@ -90,7 +86,6 @@ label svg.moon {
     height: 90px;
     position: relative;
     top: 120px;
-    /* background-color: white; */
     border: none;
 }
 
@@ -100,24 +95,23 @@ label svg.moon {
     text-align: right;
     border: none;
     font-size: 20px;
-   
-    
 }
 
 .sub-div {
-    /* width: 400px; */
     height: 390px;
     position: relative;
     top: 150px;
     margin: auto;
     padding: 50px;
     border-radius: 30px;
-    background-color:#F9F6EE;
+    background-color: #F9F6EE;
     display: grid;
 }
-table tr td button{
-    background-color: #F9F6EE; 
+
+table tr td button {
+    background-color: #F9F6EE;
 }
+
 .btn-operator {
     margin: 2px;
     width: 70px;
