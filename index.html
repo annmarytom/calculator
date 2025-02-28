@@ -42,50 +42,55 @@
                 </label>
 
             </div>
-            <div class="output-display">
-                <input type="text" id="resultArea"><br>
-                
-            </div>
+            <!-- <div class="output-display"> -->
+            <input type="text" class="output-display" id="expressionArea" disabled />
+            <input type="text" class="output-display" id="resultArea" value="0" readonly disabled>
+
+            <!-- </div> -->
             <div class="sub-div">
                 <table>
                     <tr>
-                        <td><button class="blue-btn-operator" value="ac" onclick="resultArea.value =''">AC</button></td>
+                        <td><button class="blue-btn-operator" value="ac" onclick="handleClearButton()">AC</button></td>
                         <td><button class="blue-btn-operator" value="plusOrMinus"
                                 onclick="posNegConversion()">+/-</button></td>
-                        <td><button class="blue-btn-operator" value="module" onclick="resultArea.value +='%'">%</button>
+                        <td><button class="blue-btn-operator" value="module"
+                                onclick="handleExpressionMode('%')">%</button>
                         </td>
                         <td><button class="red-btn-operator" value="division"
-                                onclick="resultArea.value +='/'">/</button></td>
+                                onclick="handleExpressionMode('/')">/</button></td>
                     </tr>
                     <tr>
-                        <td><button class="btn-operator" onclick="resultArea.value +='7'">7</button></td>
-                        <td><button class="btn-operator" value="8" onclick="resultArea.value +='8'">8</button></td>
-                        <td><button class="btn-operator" value="9" onclick="resultArea.value +='9'">9</button></td>
+                        <td><button class="btn-operator" onclick="handleNumberButtonClick(7)">7</button></td>
+                        <td><button class="btn-operator" value="8" onclick="handleNumberButtonClick(8)">8</button></td>
+                        <td><button class="btn-operator" value="9" onclick="handleNumberButtonClick(9)">9</button></td>
                         <td><button class="red-btn-operator" value="multiply"
-                                onclick="resultArea.value +='*'">*</button></td>
+                                onclick="handleExpressionMode('*')">*</button></td>
                     </tr>
                     <tr>
-                        <td><button class="btn-operator" value="4" onclick="resultArea.value +='4'">4</button></td>
-                        <td><button class="btn-operator" value="5" onclick="resultArea.value +='5'">5</button></td>
-                        <td><button class="btn-operator" value="6" onclick="resultArea.value +='6'">6</button></td>
-                        <td><button class="red-btn-operator" value="minus" onclick="resultArea.value +='-'" >-</button>
+                        <td><button class="btn-operator" value="4" onclick="handleNumberButtonClick(4)">4</button></td>
+                        <td><button class="btn-operator" value="5" onclick="handleNumberButtonClick(5)">5</button></td>
+                        <td><button class="btn-operator" value="6" onclick="handleNumberButtonClick(6)">6</button></td>
+                        <td><button class="red-btn-operator" value="minus"
+                                onclick="handleExpressionMode('-')">-</button>
                         </td>
                     </tr>
                     <tr>
-                        <td><button class="btn-operator" value="1" onclick="resultArea.value +='1'">1</button></td>
-                        <td><button class="btn-operator" value="2" onclick="resultArea.value +='2'">2</button></td>
-                        <td><button class="btn-operator" value="3" onclick="resultArea.value +='3'">3</button></td>
-                        <td><button class="red-btn-operator" value="plus" onclick="resultArea.value +='+'">+</button>
+                        <td><button class="btn-operator" value="1" onclick="handleNumberButtonClick(1)">1</button></td>
+                        <td><button class="btn-operator" value="2" onclick="handleNumberButtonClick(2)">2</button></td>
+                        <td><button class="btn-operator" value="3" onclick="handleNumberButtonClick(3)">3</button></td>
+                        <td><button class="red-btn-operator" value="plus" onclick="handleExpressionMode('+')">+</button>
                         </td>
                     </tr>
                     <tr>
                         <td><button class="btn-operator" value="refresh"
-                                onclick="resultArea.value =resultArea.value.toString().slice(0,-1)">&#x21bb;</button>
+                                onclick="expressionArea.value =expressionArea.value.toString().slice(0,-1)">&#x21bb;</button>
                         </td>
-                        <td><button class="btn-operator" value="zero" onclick="resultArea.value +='0'">0</button></td>
-                        <td><button class="btn-operator" value="dot" onclick="resultArea.value +='.'">.</button></td>
+                        <td><button class="btn-operator" value="zero" onclick="handleNumberButtonClick(0)">0</button>
+                        </td>
+                        <td><button class="btn-operator" value="dot" onclick="expressionArea.value +='.'">.</button>
+                        </td>
                         <td><button class="red-btn-operator" value="equal"
-                                onclick="resultArea.value =eval(resultArea.value)">=</button></td>
+                                onclick="handleExpressionMode('=')">=</button></td>
                     </tr>
                 </table>
 

@@ -17,7 +17,6 @@
 
 #mode-toggleBtns {
     margin-left: 150px;
-
 }
 
 label {
@@ -27,7 +26,6 @@ label {
     display: block;
     background: rgb(231, 225, 225);
     border-radius: 200px;
-    /* box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 4),inset 0px -5px 15px rgba(255, 255, 2550,0.4) ; */
     cursor: pointer;
     transition: 0.3s;
 }
@@ -48,7 +46,6 @@ label:after {
 input {
     width: 0;
     height: 0;
-    /* visibility: hidden; */
 }
 
 input:checked+label {
@@ -83,24 +80,33 @@ label svg.moon {
 .output-display {
     margin-left: 130px;
     width: 250px;
-    height: 90px;
+    height: 50px;
     position: relative;
     top: 120px;
     border: none;
+    text-align: right;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#expressionArea {
+
+    border: none;
+    font-size: 20px;
 }
 
 #resultArea {
-    width: 250px;
-    height: 90px;
-    text-align: right;
+
     border: none;
-    font-size: 20px;
+    font-size: 40px;
+    font-weight: 600;
+
 }
 
 .sub-div {
     height: 390px;
     position: relative;
-    top: 150px;
+    top: 135px;
     margin: auto;
     padding: 50px;
     border-radius: 30px;
@@ -117,14 +123,14 @@ table tr td button {
     width: 70px;
     height: 50px;
     color: rgb(12, 12, 12);
-    /* background-color: #F9F6EE; */
+
     display: grid;
     border: none;
     padding: 12px 10px;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 20px;
-    ;
+    font-size: 25px;
+    font-weight: 500;
 
 }
 
@@ -133,7 +139,6 @@ table tr td button {
     width: 70px;
     height: 50px;
     color: hsl(180, 84%, 58%);
-    /* background-color:#F9F6EE; */
     border: none;
     padding: 12px 10px;
     border-radius: 6px;
@@ -146,7 +151,6 @@ table tr td button {
     width: 70px;
     height: 50px;
     color: hsl(0, 91%, 41%);
-    /* background-color: #F9F6EE; */
     border: none;
     padding: 12px 10px;
     border-radius: 6px;
